@@ -2,11 +2,10 @@ import { Flex, Input, Text, Icon, HStack, Box, Avatar } from "@chakra-ui/react";
 import {
   RiNotificationLine,
   RiSearchLine,
-  RiUserAddFill,
   RiUserAddLine,
 } from "react-icons/ri";
 
-export default function Header() {
+export function Header() {
   return (
     <Flex
       as="header"
@@ -66,8 +65,8 @@ export default function Header() {
             <Text color="gray.300" fontSize="small">
               claudiofilhodf@hotmail.com
             </Text>
-            <Avatar size="md" name="Claudio Filho" />
           </Box>
+          <Avatar size="md" name="Claudio Filho" />
         </Flex>
       </Flex>
     </Flex>
