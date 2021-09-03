@@ -51,6 +51,7 @@ const options = {
     },
   },
 };
+
 const series = [{ name: "series 1", data: [31, 120, 10, 51, 78, 99, 111] }];
 
 export default function dashboard() {
@@ -60,7 +61,7 @@ export default function dashboard() {
       <Flex width="100%" my="6" maxW={1480} mx="auto" px="6">
         <SideBar />
         <SimpleGrid flex="1" gap="4" minChildWidth="320px" align="flex-start">
-          <Box bg="8" p="8" borderRadius={8} pb="4">
+          <Box bg="8" p={["6", "8"]} borderRadius={8} pb="4">
             <Text fontSize="lg" mb="4">
               Inscritos da semana
             </Text>
