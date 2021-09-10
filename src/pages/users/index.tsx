@@ -16,33 +16,16 @@ import {
   Spinner,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import { useQuery } from "react-query";
 
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
 
 import { Header } from "../../components/Header";
 import Pagination from "../../components/Pagination";
 import { SideBar } from "../../components/SideBar";
+import { useUser } from "../../services/hooks/useUsers";
 
 export default function UserList() {
-  const { data, isLoading, error } = useQuery("users", async () => {
-    const response = await fetch("http://localhost:3000/api/users");
-    const data = await response.json();
-
-    const users = data.users.map((user) => {
-      return {
-        id: user.id,
-        name: user.name,
-        email: user.email,
-        createdAt: new Date(user.createdAt).toLocaleDateString("pt-BR", {
-          day: "2-digit",
-          month: "long",
-          year: "numeric",
-        }),
-      };
-    });
-    return users;
-  });
+  const { data, isLoading, error, isFetching } = useUser();
 
   const isWideVersion = useBreakpointValue({
     base: false,
@@ -59,6 +42,9 @@ export default function UserList() {
           <Flex mb="8" justify="space-between" align="center">
             <Heading size="lg" fontWeight="normal">
               Usuarios
+              {!isLoading && isFetching ? (
+                <Spinner size="sm" color="gray.500" ml="4" />
+              ) : null}
             </Heading>
             <Link href="/users/create" passHref>
               <Button
@@ -125,7 +111,11 @@ export default function UserList() {
                   })}
                 </Tbody>
               </Table>
-              <Pagination />
+              <Pagination
+                totalCountOfRegisters={200}
+                currentPage={4}
+                onPageChange={() => {}}
+              />
             </>
           )}
         </Box>
