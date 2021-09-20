@@ -1,12 +1,12 @@
 <h1 align="center">
-  <img alt="Dashgo." title="Dashgo." width="200px"  src="https://github.com/DevClaudioFilho/Dashgo./blob/main/_readmeImg/logo.PNG?raw=true" />
+  <img alt="Dashgo." title="Dashgo." width="200px"  src="https://github.com/DevClaudioFilho/Dashgo./blob/main/_readmeImg/logo.png" />
 </h1>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/claudio-martins-de-pinho-filho-99a6a1192/"><img alt="Made by" src="https://img.shields.io/badge/made%20by-Claudio%20Filho-%23EBA417"></a>
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/DevClaudioFilho/Dashgo.?color=%23EBA417">
   <a href="https://github.com/DevClaudioFilho/Dashgo./commits/master"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/DevClaudioFilho/Dashgo.?color=%23EBA417"></a>
-  <img alt="GitHub" src="https://img.shields.io/github/license/DevClaudioFilho/Dashgo.?color=%23EBA417">
+  <img alt="GitHub" src="https://github.com/DevClaudioFilho/Dashgo./blob/main/_readmeImg/dashboard.png">
 </p>
 
 <p align="center">
