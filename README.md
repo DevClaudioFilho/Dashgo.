@@ -16,10 +16,6 @@
   <a href="#-license">License</a>
 </p>
 
-<p align="center">
-  <img alt="Dashboard " src="https://github.com/DevClaudioFilho/Dashgo./blob/main/_readmeImg/dashboard.PNG?raw=true" width="100%">
-</p>
-
 ## 👩‍💻 About the project
 
 Project developed to explore features of [Chakra UI](https://chakra-ui.com/) and [React Query](https://react-query.tanstack.com/) to improve the user experience.
